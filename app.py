@@ -24,8 +24,8 @@ df = pd.read_csv("cleaned_data.csv")
 col1,col2,col3,col4 = st.columns(4,border=True)
 
 with col1:
-    person_age = st.slider("Age:",min_value=1,max_value=110)
-    person_income = st.slider("Income:",min_value=10000,max_value=1000000)
+    person_age = st.slider("Age:",min_value=20,max_value=110)
+    person_income = st.slider("Income:",min_value=8000,max_value=1000000)
     person_emp_exp = st.slider("Experience:",min_value=0,max_value=100)
     loan_amnt = st.slider("Loan amount:",min_value=30000,max_value=1000000)
 
