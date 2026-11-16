@@ -31,16 +31,16 @@ with col1:
 
 with col2:
     person_gender = st.radio("Gender:",options=df["person_gender"].unique())
-    loan_intent = st.selectbox("loan_intent:",options=df["loan_intent"].unique())
+    loan_intent = st.selectbox("Loan Intent:",options=df["loan_intent"].unique())
     loan_int_rate = st.slider("Loan Interest rate:",min_value=6.0,max_value=20.0)
-    loan_percent_income = st.slider("loan_percent_income:",min_value=0.0,max_value=1.0)
+    loan_percent_income = st.slider("Loan Percent Income:",min_value=0.0,max_value=1.0)
     cb_person_cred_hist_length = st.slider("Credit History Length:",min_value=1.0,max_value=30.0)
     credit_score = st.slider("Credit Score:",min_value=300,max_value=900)
 
 
 with col3:
     person_education = st.selectbox("Education:",options=df["person_education"].unique())
-    person_home_ownership = st.selectbox("person_home_ownership",options=df["person_home_ownership"].unique())
+    person_home_ownership = st.selectbox("Person Home Ownership",options=df["person_home_ownership"].unique())
     previous_loan_defaults_on_file = st.selectbox("Loan Default:",options=df["previous_loan_defaults_on_file"].unique())
 
 
